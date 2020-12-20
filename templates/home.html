@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{%block content%}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Webcam motion detection</title>
+        <body style="background-image: url('https://www.bypeople.com/wp-content/uploads/2014/05/light-live-background-css.jpg'); background-size:100%">
+		<link rel="stylesheet" type="text/css" href="/static/styles/main.css" media="all">
+        {% load static %}
+	</body>
+	<body>
+		<video id="webCamWindow" autoplay></video>
+		<div id="movement"></div>
+
+		<script type="text/javascript" src="/static/js/global.js"></script>
+		<script type="text/javascript" src="/static/js/MotionDetector/WebCamCapture.js"></script>
+		<script type="text/javascript" src="/static/js/MotionDetector/ImageCompare.js"></script>
+		<script type="text/javascript" src="/static/js/MotionDetector/Core.js"></script>
+		<script type="text/javascript" src="/static/js/main.js"></script>
+	</body>
+</html>
+{%endblock%}
